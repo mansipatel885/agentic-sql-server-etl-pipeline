@@ -1,7 +1,6 @@
-# Agentic ETL add-on
+# Agentic SQL Server ETL Pipeline
 
-Adds seven cooperating agents on top of your existing SQL Server pipeline.
-Your files (config.py, full_load.py, incremental_load.py, ...) are NOT changed.
+Python ETL pipeline for SQL Server with full and incremental load, watermark-based change tracking, and seven cooperating agents (requirement, validation, mapping, transformation, execution, metadata, error and alert). Covered by 44 automated unit tests.
 
 | # | Agent | Job |
 |---|-------|-----|
@@ -18,7 +17,7 @@ propose a job from plain English and to explain errors. Deterministic agents ver
 everything it proposes, and nothing is written unless every check passes.
 
 ## Install
-Unzip into your etl_project folder (merge/keep existing files), then:
+Install the dependencies:
 
     source .venv/bin/activate
     pip install -r requirements-agentic.txt     # only needed for the optional Claude features
